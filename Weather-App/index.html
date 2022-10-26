@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="nav-search">
+                    <input type="text" name="search" id="nav-search" placeholder="Search">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <!-- contain of weather app -->
+    <form id="search-form">
+        <input type="search" placeholder="Enter City Name" id="search-inp" autocomplete="off"/>
+        <br>
+        <button id="search-btn">Search</button>
+    </form>
+    <div id="app-container">
+        <div id="location">
+            <p>-----</p>
+        </div>
+        <div id="temp">
+            <img id="temp-icon" src="icons/clear.png" alt="">
+            <p><span id="temp-value">-----</span> <span id="temp-unit">&#176c</span></p>
+        </div>
+        <div id="climate">
+            <p>-----</p>
+        </div>
+    </div>
+    <div id="history">
+        <h2>Your History</h2>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
